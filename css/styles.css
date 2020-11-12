@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #E1EBF4;
+    color: #333333;
+}
+.container {
+    width: 1305px;
+    margin: 0 auto;
+}
+.main_header {
+    background: url(../img/movee_man.png) no-repeat, #FED100;
+    background-position: 100% 100%;
+    padding: 40px 0;
+    height: 650px;
+}
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color:  #333333;
+    text-transform: uppercase;
+}
+.header_menu {
+    display: flex;
+}
+.header_menu_item {
+    padding: 0px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    text-transform: capitalize;
+}
+.header_phone {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333333;
+}
+.header_title_main {
+    width: 50%;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 126.9%;
+    color: #333333;
+    padding: 50px 0 5px;
+}
+.header_title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 43px;
+}
+.header_btn {
+    background: #FF352B;
+    padding: 14px 0;
+    width: 23%;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2F2F2;
+    border: 2px solid #F2F2F2
+}
+.header_items {
+    padding-top: 77px;
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+}
+.header_item {
+    padding-left: 60px;
+    font-size: 16px;
+    line-height: 21px;
+}
+.header_item:before {
+    content: "";
+}
+.truck {
+    background: url(../img/truck.svg) no-repeat;
+}
+.package {
+    background: url(../img/triggerTwo.svg) no-repeat;
+}
+.price {
+    background: url(../img/money.svg) no-repeat;
+}
