@@ -6,7 +6,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: #E1EBF4;
+    background: #FFFFFF;;
     color: #333333;
 }
 .container {
@@ -15,7 +15,7 @@ body {
 }
 .main_header {
     background: url(../img/movee_man.png) no-repeat, #FED100;
-    background-position: 100% 100%;
+    background-position: 83% 100%;
     padding: 40px 0;
     height: 650px;
 }
@@ -96,4 +96,45 @@ body {
 }
 .price {
     background: url(../img/money.svg) no-repeat;
+}
+.process_title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    padding: 95px 0 60px;
+    text-align: center;
+}
+ol.process {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 40px;
+}
+li.process_item {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    width: 50%;
+    padding: 0px 0 0 60px;
+}
+li.process_item::before {
+    content: "0" counter(my-awesome-counter);
+    margin-right: 2.5rem;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 61px;
+    text-shadow: 0px 4px 4px rgba(254, 209, 0.1, 0.25);
+}
+.process_item_text {
+    padding: 5px 5px 71px;
+}
+.middle_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 17px;
+}
+.small_text {
+    font-size: 16px;
+    line-height: 21px;
 }
