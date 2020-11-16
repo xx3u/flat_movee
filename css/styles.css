@@ -321,3 +321,67 @@ li.auto_property:first-child::before, li.auto_property:last-child::before {
     margin: 0 auto;
     display: block;
 }
+.zakaz {
+    padding: 130px 0;
+    width: 77%;
+    margin: 0 auto;
+}
+.form_title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    width: 80%;
+}
+.form_small_title {
+    font-size: 16px;
+    line-height: 21px;
+}
+.form_field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 0;
+}
+input {
+    outline: 0;
+    border-width: 0 0 1px;
+    /* border: 1px solid #333333; */
+    border-color: #333333;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.header_btn.callme {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    padding: 10px 8px;
+    margin-bottom: 27px;
+}
+input[type="checkbox"] {
+    visibility: hidden;
+  }
+input[type="checkbox"] + label:before {
+    border: 2px solid #333;
+    content: "\00a0";
+    display: inline-block;
+    font: 13px/1em sans-serif;
+    height: 13px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 15px;
+    font-weight: bold ;
+  }
+  input[type="checkbox"]:checked + label:before {
+    background: #fff;
+    color: #333;
+    content: "\2713";
+    text-align: center;
+  }
+  input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+  }
+  input[type="checkbox"]:focus + label::before {
+      outline: rgb(59, 153, 252) auto 5px;
+  }
