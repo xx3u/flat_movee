@@ -259,21 +259,65 @@ li.auto_property:first-child::before, li.auto_property:last-child::before {
     flex: 60%;
     padding: 43px 0;
     background: url(../uploads/truck.jpg) 0% 0 no-repeat;
-    height: 641px;
+    height: 550px;
     width: 100%;
 }
 .auto_image.kabluk {
     flex: 60%;
     padding: 43px 0;
     background: url(../uploads/kabluki.jpg) 80% 0 no-repeat;
-    height: 641px;
+    height: 351px;
     width: 100%;
 }
 .auto_image.gruzovik {
     flex: 60%;
     padding: 43px 0;
     background: url(../uploads/gruzovik.jpg) 80% 0 no-repeat;
-    height: 641px;
+    height: 433px;
     width: 100%;
     margin-top: -83px;
+}
+.recommendation {
+    background: #FED100;
+    padding-bottom: 94px;
+}
+.otziv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 55px;
+    max-height: 325px;
+    overflow: hidden;
+}
+.otziv_item {
+    padding-right: 10px;
+}
+.otziv_name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 10px;
+}
+.otziv_date, .otziv_text {
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 20px;
+}
+.otziv_date::after {
+    content: url(../img/starz.svg);
+    padding-left: 10px;
+}
+.otziv_link {
+    color: #333333;
+}
+.otziv_btn {
+    border: 1px solid #333333;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 13px 64px;
+    background-color: inherit;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
