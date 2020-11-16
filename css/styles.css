@@ -179,3 +179,101 @@ ul.tariff {
 .tariff_item:hover {
     border: 1px solid rgba(254,209,0,1);
 }
+.process_title.auto {
+    padding-bottom: 20px;
+}
+.price_title.auto {
+    padding-bottom: 58px;
+}
+.tab {
+    /* overflow: hidden; */
+    max-width: 641px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tablinks {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 13px 36px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid #EBEBEB;
+    color: #333333;
+    text-transform: capitalize;
+    width: 201px;
+}
+.tab button:hover {
+    border: 1px solid #FED100;
+}
+.auto_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.auto_description {
+    flex: 40%;
+    align-self: flex-start;
+    padding: 100px 0;
+    position: relative;
+}
+ul.auto_properties {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 29%;
+    padding: 94px 0 0 0;
+}
+ul.auto_properties.kabluk, ul.auto_properties.gruzovik {
+    left: 12%;
+}
+li.auto_property {
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 31px;
+}
+li.auto_property:first-child {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+li.auto_property::before {
+    content: "\2713\0020";
+    font-weight: bold;
+}
+li.auto_property:first-child::before, li.auto_property:last-child::before {
+    content: '';
+}
+.header_btn.auto {
+    width: 100%;
+}
+.auto_main.kabluk, .auto_main.gruzovik {
+    display: none;
+}
+.auto_image.gazel {
+    flex: 60%;
+    padding: 43px 0;
+    background: url(../uploads/truck.jpg) 0% 0 no-repeat;
+    height: 641px;
+    width: 100%;
+}
+.auto_image.kabluk {
+    flex: 60%;
+    padding: 43px 0;
+    background: url(../uploads/kabluki.jpg) 80% 0 no-repeat;
+    height: 641px;
+    width: 100%;
+}
+.auto_image.gruzovik {
+    flex: 60%;
+    padding: 43px 0;
+    background: url(../uploads/gruzovik.jpg) 80% 0 no-repeat;
+    height: 641px;
+    width: 100%;
+    margin-top: -83px;
+}

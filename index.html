@@ -84,5 +84,67 @@
             </li>    
         </ul>
     </section>
+    <section class="container autopark">
+        <h2 class="process_title auto">Автопарк</h2>
+        <h2 class="price_title auto">10 видов автомобилей от 800 кг до 10 тонн</h2>
+        <div class="tab">
+            <button class="tablinks" id="gazel">Газели</button>
+            <button class="tablinks" id="kabluk">Каблуки</button>
+            <button class="tablinks" id="gruzovik">Грузовики</button>
+        </div>
+        <div class="auto_main gazel">
+            <div class="auto_description">
+                <ul class="auto_properties gazel">
+                    <li class="auto_property">Газель 3 метра </li>
+                    <li class="auto_property">Ширина 2 м</li>
+                    <li class="auto_property">Высота 2 м</li>
+                    <li class="auto_property">Объем 16 м³</li>
+                    <li class="auto_property">Грузоподъемность 1,5 т</li>
+                    <li class="auto_property"><button class="header_btn tariff">Заказать</button></li>
+                </ul>
+            </div>
+            <div class="auto_image gazel"></div>
+        </div>
+        <div class="auto_main kabluk">
+            <div class="auto_description">
+                <ul class="auto_properties kabluk">
+                    <li class="auto_property">Каблук Лада Ларгус </li>
+                    <li class="auto_property">Ширина 1.75 м</li>
+                    <li class="auto_property">Высота 1.67 м</li>
+                    <li class="auto_property">Объем 10.5 м³</li>
+                    <li class="auto_property">Грузоподъемность 1 т</li>
+                    <li class="auto_property"><button class="header_btn tariff">Заказать</button></li>
+                </ul>
+            </div>
+            <div class="auto_image kabluk"></div>
+        </div>
+        <div class="auto_main gruzovik">
+            <div class="auto_description">
+                <ul class="auto_properties gruzovik">
+                    <li class="auto_property">Грузовик 5 тонн </li>
+                    <li class="auto_property">Ширина 2.45 м</li>
+                    <li class="auto_property">Высота 2.45 м</li>
+                    <li class="auto_property">Объем 82 м³</li>
+                    <li class="auto_property">Грузоподъемность 20 т</li>
+                    <li class="auto_property"><button class="header_btn tariff">Заказать</button></li>
+                </ul>
+            </div>
+            <div class="auto_image gruzovik"></div>
+        </div>
+    </section>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script src="utils.js"></script>
+    <script>
+        $(document).on('click', '#gazel', () => {
+            tabclick('gazel');
+            
+        })
+        $(document).on('click', '#kabluk', () => {
+            tabclick('kabluk');
+        })
+        $(document).on('click', '#gruzovik', () => {
+            tabclick('gruzovik');
+        })
+    </script>
 </body>
 </html>
