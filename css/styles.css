@@ -186,7 +186,7 @@ ul.tariff {
     padding-bottom: 58px;
 }
 .tab {
-    /* overflow: hidden; */
+    overflow: hidden;
     max-width: 641px;
     text-align: center;
     margin: 0 auto;
@@ -298,14 +298,30 @@ li.auto_property:first-child::before, li.auto_property:last-child::before {
     line-height: 29px;
     padding-bottom: 10px;
 }
+.date_w_rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .otziv_date, .otziv_text {
     font-size: 16px;
     line-height: 21px;
     padding-bottom: 20px;
 }
-.otziv_date::after {
-    content: url(../img/starz.svg);
-    padding-left: 10px;
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+    color: #FF352B;
 }
 .otziv_link {
     color: #333333;
@@ -322,7 +338,7 @@ li.auto_property:first-child::before, li.auto_property:last-child::before {
     display: block;
 }
 .zakaz {
-    padding: 130px 0;
+    padding: 130px 0 78px;
     width: 77%;
     margin: 0 auto;
 }
@@ -345,7 +361,6 @@ li.auto_property:first-child::before, li.auto_property:last-child::before {
 input {
     outline: 0;
     border-width: 0 0 1px;
-    /* border: 1px solid #333333; */
     border-color: #333333;
     font-weight: 500;
     font-size: 20px;
@@ -372,16 +387,81 @@ input[type="checkbox"] + label:before {
     vertical-align: top;
     width: 15px;
     font-weight: bold ;
-  }
-  input[type="checkbox"]:checked + label:before {
+}
+input[type="checkbox"]:checked + label:before {
     background: #fff;
     color: #333;
     content: "\2713";
     text-align: center;
-  }
-  input[type="checkbox"]:checked + label:after {
+}
+input[type="checkbox"]:checked + label:after {
     font-weight: bold;
-  }
-  input[type="checkbox"]:focus + label::before {
+}
+input[type="checkbox"]:focus + label::before {
       outline: rgb(59, 153, 252) auto 5px;
-  }
+}
+#mapid { 
+    height: 666px;
+    position: relative;
+}
+.map {
+}
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    height: 326px;
+    width: 368px;
+    background: #ffffff;    
+    z-index: 999999999999999999999999999;
+}
+.modal_title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #333333;
+    text-transform: uppercase;
+    padding: 40px 35px;
+}
+ul.modal_info {
+    list-style: none;  
+    padding: 0 35px;
+}
+li.modal_item {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 10px;
+}
+li.modal_item::before {
+    content: '✓';
+    color: #FED100;
+    padding-right: 6px;
+}
+a.modal_link {
+    color: #333333;
+}
+.modal_social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.modal_soc {
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.play {
+    background: url(../img/play.svg) 0% 0 no-repeat;
+}
+.vk {
+    background: url(../img/vk.svg) 0% 0 no-repeat;
+}
+.fb {
+    background: url(../img/fb.svg) 0% 0 no-repeat;
+}
+.camera {
+    background: url(../img/camera.svg) 0% 0 no-repeat;
+}
