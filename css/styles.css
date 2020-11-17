@@ -465,3 +465,45 @@ a.modal_link {
 .camera {
     background: url(../img/camera.svg) 0% 0 no-repeat;
 }
+.main_footer {
+    background: #FED100;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 98px 0;
+}
+.footer_item {
+    display: flex;
+    flex-direction: column;
+    /* width: 21%; */
+}
+.footer_title {
+    padding: 28px 0;
+    font-size: 16px;
+    line-height: 130.4%;
+    font-weight: normal;
+}
+.footer_logo {
+    width: 21%;
+}
+a.footer_menu_item {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    padding: 0 0 15px;
+}
+.email {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333333;
+    padding-top: 26px;
+}
+.footer_phone {
+    text-align: center;
+    padding-top: 10px;
+}
