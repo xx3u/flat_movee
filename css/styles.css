@@ -32,6 +32,12 @@ body {
     color:  #333333;
     text-transform: uppercase;
 }
+label {
+    display: none;
+}
+#toggle {
+    display: none;
+}
 .header_menu {
     display: flex;
 }
@@ -477,7 +483,6 @@ a.modal_link {
 .footer_item {
     display: flex;
     flex-direction: column;
-    /* width: 21%; */
 }
 .footer_title {
     padding: 28px 0;
@@ -506,4 +511,192 @@ a.footer_menu_item {
 .footer_phone {
     text-align: center;
     padding-top: 10px;
+}
+@media only screen and (max-width: 1100px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .main_header {
+        width: 100%;
+        background-position: calc(100% + 100%);
+        padding: 10px;
+    }
+    .header_menu, .footer_logo {
+        text-align: center;
+        width: 100%;
+    }
+    .header_menu_item, .header_phone {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .container, .prices, li.process_item, .autopark, .recommendation {
+        width: 100%;
+        padding: 10px;
+    }
+    ol.process, ul.tariff, .footer {
+        flex-direction: column;
+    }
+    .footer {
+        text-align: center;
+        align-items: center;
+    }
+    .otziv, .form_field {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .header_title_main {
+        font-size: 40px;
+        text-align: right;
+        width: 100%;
+    }
+    .header_title, .header_items {
+        text-align: right;
+    }
+    .header_item {
+        padding-bottom: 30px;
+    }
+    .tariff_item {
+        margin: 10px auto;
+    }
+    .process_title, .process_item_text {
+        padding: 10px;
+    }
+    .zakaz {
+        margin: 0 auto;
+        padding: 10px;
+        width: 100%;
+    }
+    input {
+        width: 100%;
+        padding: 15px;
+    }
+    .call_data {
+        padding: 10px;
+    }
+    .header_btn.callme {
+        margin-bottom: 0;
+    }
+    label {
+        display: block;
+    }
+    .modal {
+        display: none;
+    }
+    
+    .auto_image.gruzovik {
+        background-size: 48%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .header_items {
+        width:100%;
+        align-items: flex-end;
+        flex-direction: column;
+        padding-top: 156px;
+    }
+    .main_header > .container > .header_btn {
+        bottom: 38%;
+        position: absolute;
+        left: 28%;
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .main_header {
+        background-position: -32% 62%;
+        background-size: 150%;
+    }
+    .header_items {
+        display: none;
+    }
+    .header_title_main {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .header_title_main {
+        font-size: 30px;
+    }
+    .header_title {
+        font-size: 24px;
+        text-align: center;
+    }
+    .main_header > .container > .header_btn {
+        bottom: 23%;
+        position: absolute;
+        left: 0;
+        width: 100%;
+    }
+    .process_title {
+        font-size: 24px;
+    }
+    .process_item_text > .small_text {
+        display: none;
+    }
+    .process_item_text  {
+        padding: 0;
+    }
+    .middle_title {
+        font-size: 16px;
+    }
+    ol.process {
+        padding: 10px;
+    }
+    .prices > .price_title {
+        display: none;
+    }
+    .tariff_item {
+        border: none;
+        padding: 0;
+    }
+    .tariff_item:not(:first-child) {
+        display: none;
+    }
+    .header_menu {
+        display: none;
+        flex-direction: column;
+    }
+    .header_phone {
+        display: none;
+    }
+    .price_title.auto {
+        display: none;
+    }
+    .tablinks {
+        padding: 0;
+        border: none;
+    }
+    li.auto_property:not(:first-child):not(:last-child) {
+        display: none;
+    }
+    .auto_image.gazel, .auto_image.gruzovik, .auto_image.kabluk {
+        flex: 100%;
+        padding: 0;
+        background-size: 100%;
+        height: 375px;
+    }
+    .auto_description {
+        flex: 100%;
+        padding: 10px;
+    }
+    .auto_main {
+        flex-wrap: wrap;
+    } 
+    ul.auto_properties {
+        padding-top: 250px;
+    }
+    .auto_image.gruzovik {
+        background: url(../uploads/gruzovik.jpg) 0% 45% no-repeat;
+        width: 100%;
+        background-size: 100%;
+    }
+    ul.auto_properties.gruzovik {
+        left: 23%;
+        padding-top: 230px;
+    }
+    ul.auto_properties.gruzovik > li.auto_property {
+        padding-bottom: 0;
+    }
 }
